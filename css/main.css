@@ -886,5 +886,98 @@ header .container .row .links ul li a:hover{
     color: #FFF;
 }
 /* End Latest News Section */
+/* Start subscribe Section */
+.subscribe{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
 
+.subscribe .container h1{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.subscribe .container h1::before{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    height: 3px;
+    width: 165px;
+    background-color: var(--blue-color);
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .subscribe .container h1::before{
+        width: 100px;
+    }
+}
+
+.subscribe .container .form{
+    background-color: var(--blue-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.subscribe .container .form form input{
+    width: 80%;
+    max-width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .subscribe .container .form form input{
+        width: 75%;
+    }
+}
+
+@media (max-width: 767px) {
+    .subscribe .container .form form input{
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .subscribe .container .form form input{
+        width: 100%;
+    }
+}
+
+.subscribe .container .form form input::placeholder{
+    color: #B0ADAD;
+}
+
+.subscribe .container .form form button{
+    height: 45px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: transparent;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .subscribe .container .form form button{
+        display: block;
+        margin: 15px auto 0px;
+    }
+}
+
+.subscribe .container .form form button:hover{}
+
+
+
+
+/* End subscribe Section */
 
