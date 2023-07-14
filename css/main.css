@@ -162,13 +162,72 @@ header .container .row .links ul li a:hover{
     cursor: pointer;
 }
 
+header .container .row .small-screen-links{
+    display: none;
+}
+
 @media (max-width: 767px) {
+    header .container .row{
+        position: relative;
+    }
     header .container .row .links{
         display: none;
     }
     #navIcon{
         display: block;
     }
+    header .container .row .small-screen-links{
+        display: none;
+        position: absolute;
+        top: 38px;
+        right: 3px;
+        background: var(--blue-color);
+        z-index: 10;
+        min-height: 106px;
+        width: 170px;
+        border: 1px solid #DDD;
+    }
+    header .container .row .open{
+        display: flex;
+    }
+    header .container .row .small-screen-links ul{
+        width: 100%;
+        position: relative;
+    }
+    header .container .row .small-screen-links ul::before{
+        content: '';
+        position: absolute;
+    }
+    header .container .row .small-screen-links ul::after{
+        content: '';
+        position: absolute;
+        /* height: 13px; */
+        /* width: 13px; */
+        top: -18px;
+        right: 0px;
+        border: 9px solid;
+        border-color: transparent transparent #DDD;
+    }
+    header .container .row .small-screen-links ul li{
+        list-style: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        transition: 0.6s;
+    }
+    header .container .row .small-screen-links ul li:hover{
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    header .container .row .small-screen-links ul li:not(:last-child){
+        border-bottom: 1px solid #DDD;
+    }
+    header .container .row .small-screen-links ul li a{
+        text-decoration: none;
+        color: #FFF;
+    }
+
+
 }
 /* End Header */
 /* Start Hero Section */
