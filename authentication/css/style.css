@@ -159,8 +159,17 @@ html{
     cursor: pointer;
 }
 
+.login .container .row .col .form form .box > div button a{
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.4s;
+}
+
 .login .container .row .col .form form .box > div button:hover{
     background: transparent;
+}
+
+.login .container .row .col .form form .box > div button:hover a{
     color: #0A58C3;
 }
 
